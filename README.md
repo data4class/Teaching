@@ -1,2 +1,2 @@
 # Teaching
-This repository contains notebook and data for various topics in ML and Finance
+This repository contains notebook and data for various topics in ML and Finance conducted during NISM. 
