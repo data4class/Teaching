@@ -1,0 +1,80 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{enumitem}
+\usepackage{url}
+
+\title{Financial Analytics Final Project for CPDS 2025}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Project Overview}
+
+For this assignment, you will apply financial analytics techniques to solve a real-world financial problem of your choice. The project should demonstrate your understanding of quantitative finance methods including Monte Carlo simulation, portfolio optimization, and machine learning applications in finance. You are expected to select a practical financial application such as portfolio construction and risk management, derivatives pricing and risk assessment, asset allocation strategies, risk measurement and stress testing, or algorithmic trading strategies. Your project must have at least one core technique from our curriculum: Monte Carlo simulation for pricing or risk estimation, portfolio optimization using mean-variance framework or alternative approaches.
+
+Obtain financial data from publicly available sources such as Yahoo Finance, BSE/NSE, quantlib, Alpha Vantage API, or academic datasets like CRSP/Compustat. The dataset should be enough to demonstrate meaningful financial analysis (minimum 2-3 years of daily data for at least 20-50 assets recommended) and should present genuine financial challenges requiring analytic techniques discussed during class. Your analysis should compare different approaches where applicable, discuss the practical implications of your findings, and address real-world considerations such as testing your strategies.
+
+\section*{Deliverables}
+
+Submit a 1-2 page technical report (with proper references and citations) structured as follows: (1) \textbf{Problem Statement and Data}: Clear description of the financial problem, dataset characteristics, data preprocessing steps, and motivation; (2) \textbf{Methodology}: Detailed explanation of chosen techniques (Monte Carlo setup, optimization formulation, ML architecture), parameter selection, and implementation approach; (3) \textbf{Results and Financial Analysis}: Quantitative results with appropriate financial metrics (Sharpe ratio, VaR, minimum risk, etc.), sensitivity analysis, and interpretation in financial context; (4) \textbf{Practical Implications and Limitations}: Discussion of real-world applicability, implementation challenges, and potential improvements. Additionally, submit well-documented Python code and dataset access instructions. The project will be evaluated based on problem formulation and financial relevance (20\%), technical rigor and implementation (30\%), analytical depth and financial interpretation (25\%), and presentation quality (25\%).
+
+Python libraries for your project: numpy and pandas for data pre-processing, cvxpy for optimization, scikit-learn for ML, TensorFlow for neural network, yfinance and quantlib for data and quant. 
+
+\section*{Deadline}
+You have to complete and submit final project by {\textbf 18 August, 2025} EOD.
+
+\section*{Group}
+You can form a group of two or three for a larger project. For a smaller project you can work alone. 
+
+\newpage
+
+\section*{Some project suggestions}
+
+\begin{enumerate}
+
+\item \textbf{Portfolio rebalancing} \\
+\textbf{Data:} NIFTY 50 stocks \\
+\textbf{Problem:} Develop weekly rebalancing portfolio, compare your portfolio performance against nifty 50 index. \\
+\textbf{Techniques:} Monte Carlo simulation for weekly covariance and expected return estimation, portfolio optimization for weekly weight calculations.
+
+\item \textbf{Portfolio rebalancing and Black-litterman model} \\
+\textbf{Data:} NIFTY 50 stocks \\
+\textbf{Problem (similar to above):} Develop weekly rebalancing portfolio, compare your portfolio performance against nifty 50 index. \\
+\textbf{Techniques:} Black-litterman for weekly covariance and expected return estimation, portfolio optimization for weekly weight calculations.
+
+\item \textbf{Portfolio rebalancing and neural network model} \\
+\textbf{Data:} NIFTY 50 stocks \\
+\textbf{Problem (similar to above):} Develop weekly rebalancing portfolio, compare your portfolio performance against nifty 50 index. \\
+\textbf{Techniques:} Neural network for weekly covariance and expected return estimation, portfolio optimization for weekly weight calculations.
+
+\item \textbf{Portfolio Optimization with ESG Constraints} \\
+\textbf{Data:} NIFTY 500 stocks with ESG scores \\
+\textbf{Problem:} Construct optimal portfolios balancing financial returns with environmental, social, and governance criteria. \\
+\textbf{Techniques:} clustering for ESG-aware diversification, Minimum risk optimization with ESG constraints.
+
+\item \textbf{Options Portfolio Risk Management} \\
+\textbf{Data:} Options chain data from Yahoo Finance, underlying stock prices \\
+\textbf{Problem:} Construct and hedge complex options strategies while managing Greeks exposures. \\
+\textbf{Techniques:} Monte Carlo simulation for options pricing, Greeks calculation, portfolio optimization for delta-neutral strategies.
+
+\item \textbf{Cryptocurrency Portfolio Construction} \\
+\textbf{Data:} Major cryptocurrency prices from CoinGecko API or Binance \\
+\textbf{Problem:} Build diversified crypto portfolios considering high volatility and correlation dynamics. \\
+\textbf{Techniques:} ML for dynamic covariance estimation, Monte Carlo for VaR calculation, spectral clustering for crypto categorization.
+
+\item \textbf{Factor-Based Smart Beta Strategies} \\
+\textbf{Data:} Stock fundamentals, factor loadings (value, momentum, quality, low volatility) \\
+\textbf{Problem:} Design factor-tilted portfolios outperforming market-cap weighted benchmarks. \\
+\textbf{Techniques:} Portfolio optimization with factor constraints, backtesting, Neural Network for factor return prediction.
+
+\item \textbf{Robo-Advisor Portfolio Allocation} \\
+\textbf{Data:} ETF universe, investor risk profiles, market conditions \\
+\textbf{Problem:} Design automated portfolio allocation system adapting to investor preferences and market dynamics. \\
+\textbf{Techniques:} Mean-variance optimization with investor constraints and views.
+
+\end{enumerate}
+
+\end{document}
